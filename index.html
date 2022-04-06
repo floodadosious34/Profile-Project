@@ -6,29 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <div id="top">
-        <h1>Software Developer</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="container">
+        <div class="top">
+            <h1>Software Developer</h1>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+        <section class="container-main">
+            <div class="profile_image">
+                <img src="./images/jflood_profile.jpg" alt="image of James">
+            </div>
+            <section class="name-location">
+                <h1>James Flood Jr.</h1>
+                <span><a href="https://www.google.com/maps/d/u/0/viewer?hl=en&ie=UTF8&msa=0&ll=38.30610299999999%2C-85.75172400000001&spn=0.21876%2C0.4422&z=11&mid=1EQUDuDrVNTC7JtqRehaHa-LpBFY" target="_blank"><i class="fa-solid fa-location-dot"></i></a> Software Engineer Based in Louisville, KY</span>
+                <p>Highly driven software engineer. Interests include web development, Digital Audio Workstations, and Data Analysis.</p>
+            </section>
+            <section id="about">
+                <h1>About Me</h1>
+                <p>Highly driven software engineer. Interests include web development, Digital Audio Workstations, and Data Analysis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec ipsum ligula. Nam sollicitudin mi ut augue fermentum, a cursus mauris ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dapibus ligula a justo sodales, id mattis quam porttitor. Vivamus ac facilisis metus, non sagittis turpis. Donec lectus elit, rhoncus sed erat ac.</p>
+                <a href="https://www.linkedin.com/in/james-flood-jr/" target="_blank" id="button">View My <span>LinkedIn</span></a>
+            </section>
+            <section id="skills">
+                <h1>Skills</h1>
+                <div class="experience">
+                    <p id="html"><i class="fa-brands fa-html5"></i>HTML</p>
+                    <p id="css"><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                    <p id="JS"><i class="fa-brands fa-node-js"></i>JavaScript</p>
+                </div>
+            </section>
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="projects">
+                    <p id="proj-1"><img class="proj-thumb" src="/images/buttons.png" alt="picture of buttons"></p>
+                    <p id="proj-2"><img class="proj-thumb" src="/images/gridColors.png" alt="picture of grid website"></p>
+                    <p id="proj-3"><img class="proj-thumb" src="/images/youtbe.png" alt="picture of youtbe"></p>
+                </div>
+            </section>
+            <form id="form" action="https://formsubmit.co/floodadosious111@gmail.com" method="POST">
+                <label>Message James</label>
+                <input type="hidden" name="_subject" value="New email">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="hidden" name="_next" value="https://">
+                <input type="text" name="message" placeholder="write message here" required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div>Flood Inc. 2022</div>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/james-flood-jr/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://github.com/floodadosious34" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                <a href="mailto:floodadosious111@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>    
     </div>
-    <section class="container">
-        <section class="profile_image">
-            <img src="./images/jflood_profile.jpg" alt="image of James">
-        </section>
-        <section class="about_me">
-            <h1>James Flood Jr.</h1>
-            <span><a href="https://www.google.com/maps/d/u/0/viewer?hl=en&ie=UTF8&msa=0&ll=38.30610299999999%2C-85.75172400000001&spn=0.21876%2C0.4422&z=11&mid=1EQUDuDrVNTC7JtqRehaHa-LpBFY" target="_blank"><i class="fa-solid fa-location-dot"></i></a> Software Engineer Based in Louisville, KY</span>
-            <p>Highly driven software engineer. Interests include web development, Digital Audio Workstations, and Data Analysis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec ipsum ligula. Nam sollicitudin mi ut augue fermentum, a cursus mauris ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dapibus ligula a justo sodales, id mattis quam porttitor. Vivamus ac facilisis metus, non sagittis turpis. Donec lectus elit, rhoncus sed erat ac.</p>
-            <a href="https://www.linkedin.com/in/james-flood-jr/" target="_blank" id="button">View My LinkedIn</a>
-        </section>
-    </section>
-    <footer>Flood Inc. 2022</footer>
 </body>
 <script src="https://kit.fontawesome.com/5b50fa3e4d.js" crossorigin="anonymous"></script>
 </html>
