@@ -18,7 +18,7 @@ body {
     display: block;
     text-align: center;
     background-color: rgb(241, 240, 236);
-    background-image: url("/images/beach.jpg");
+    background-image: url("./images/beach.jpg");
     background-repeat: no-repeat;
     margin: 0 auto 0;
     max-width: 100%;
