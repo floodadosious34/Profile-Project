@@ -11,9 +11,18 @@
             margin-top: 0;
         }
         .container {
-            background-image: url(/images/beach.jpg);
-            text-align: center;
-            padding-top: 50%;
+            background-image: url(./images/beach.jpg);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > h1 {
+            grid-row: 1;
+        }
+        .container > a {
+            grid-row: 2;
         }
     </style>
 </head>
