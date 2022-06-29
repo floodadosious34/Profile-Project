@@ -178,13 +178,8 @@ a, a:hover, a:focus, a:active {
         grid-template-rows: 1fr;
         gap: 10px;
         padding-left: 3em;
-        /* min-height: 500px; */
     }
-        /* grid-template-areas: 
-        "name name name"
-        "about about pro-img"
-        "skill skill skill"
-        "proj proj proj proj"; */
+        
 
     .name-location {
         /* grid-area: name; */
